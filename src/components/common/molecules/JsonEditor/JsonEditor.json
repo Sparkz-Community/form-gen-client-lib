@@ -1,0 +1,14 @@
+{
+  "props": {
+    "objData": {
+      "type": ["Object", "Array"],
+      "required": "true"
+    },
+    "options": {
+      "type": "Object",
+      "default": "function () { return { confirmText: 'confirm', cancelText: 'cancel'};}"
+    }
+  },
+  "slots": {
+  }
+}

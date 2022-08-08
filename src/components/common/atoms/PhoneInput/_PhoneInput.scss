@@ -1,0 +1,23 @@
+#PhoneInput:deep {
+  .vue-tel-input {
+    border: unset !important;
+    box-shadow: unset !important;
+  }
+  .vti__input {
+    background-color: unset;
+  }
+  .vti__input::placeholder {
+    color: rgba(0, 0, 0, 0.6);;
+  }
+  .vti__dropdown:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  .vti__dropdown-list {
+    z-index: 2001;
+  }
+
+
+  .q-field__control {
+    overflow: unset;
+  }
+}

@@ -1,0 +1,23 @@
+#FormGenerator {
+    // Vars
+
+    // Support
+
+    // Module
+    & {
+        //
+    }
+
+    // Facets
+
+    // States
+}
+
+input:required + div.q-field__label::after,
+.required .q-field__label::after,
+.required .q-checkbox__label::after,
+.required .q-toggle__label::after,
+.required .q-radio__label::after {
+  content: " *";
+  color: red;
+}

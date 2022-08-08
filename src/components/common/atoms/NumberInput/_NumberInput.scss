@@ -1,0 +1,12 @@
+#NumberInput:deep {
+  .number-input__button {
+    background-color: var(--number-input-button-background);
+    color: var(--number-input-button-color);
+  }
+  .number-input__button:before {
+    background-color: var(--number-input-button-color);
+  }
+  .number-input__button:after {
+    background-color: var(--number-input-button-color);
+  }
+}
