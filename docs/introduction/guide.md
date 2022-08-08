@@ -11,21 +11,21 @@ If you are using module bundlers such as Webpack, you can directly include packa
 NPM:
 
 ``` bash
-$ npm install @iy4u/form-gen-client-lib --save
+$ npm install @sparkz-community/form-gen-client-lib --save
 ```
 
 or Yarn:
 
 ``` bash
-$ yarn add @iy4u/form-gen-client-lib
+$ yarn add @sparkz-community/form-gen-client-lib
 ```
 
-Then register `@iy4u/form-gen-client-lib` components and directives all at once in your app's entry:
+Then register `@sparkz-community/form-gen-client-lib` components and directives all at once in your app's entry:
 
 ``` js
 // main.js
 import Vue from 'vue'
-import * as mylib from '@iy4u/form-gen-client-lib'
+import * as mylib from '@sparkz-community/form-gen-client-lib'
 
 Vue.use(mylib)
 ```

@@ -5,7 +5,7 @@ module.exports = {
       vuex: 'vuex',
       quasar: 'quasar',
       'feathers-vuex': 'feathers-vuex',
-      '@iy4u/common-client-lib': '@iy4u/common-client-lib',
+      '@sparkz-community/common-client-lib': '@sparkz-community/common-client-lib',
     });
   }
 };

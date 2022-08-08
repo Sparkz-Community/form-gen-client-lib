@@ -31,7 +31,7 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        '@iy4u/form-gen-client-lib': resolve(__dirname, '../../src')
+        '@sparkz-community/form-gen-client-lib': resolve(__dirname, '../../src')
       }
     }
   }

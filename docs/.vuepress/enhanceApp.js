@@ -1,4 +1,4 @@
-import * as mylib from '@iy4u/form-gen-client-lib'
+import * as mylib from '@sparkz-community/form-gen-client-lib'
 import '../../assets/main.css'
 
 export default ({

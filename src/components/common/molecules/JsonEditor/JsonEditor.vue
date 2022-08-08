@@ -8,7 +8,7 @@
   /* eslint-disable no-unreachable */
 
   import JsonView from './utils/JsonView.vue';
-  import {lodash} from '@iy4u/common-client-lib';
+  import {lodash} from '@sparkz-community/common-client-lib';
   const {$lcloneDeep} = lodash;
 
   export default {

@@ -19,7 +19,7 @@
     name: 'ToggleMe',
     inheritAttrs: false,
     components: {
-      iyToggleMe: () => import('@iy4u/common-client-lib').then(module => module.ToggleMe),
+      iyToggleMe: () => import('@sparkz-community/common-client-lib').then(module => module.ToggleMe),
     },
     props: {
       modelValue: {

@@ -27,8 +27,8 @@ create [npm account](https://www.npmjs.com/signup).
 
 ### Set up iy4u profile:
 ```bash
-npmrc -c iy4u
-npm login --scope=@iy4u --registry=https://registry.npmjs.org/
+npmrc -c sparkz-community
+npm login --scope=@sparkz-community --registry=https://registry.npmjs.org/
 ```
 
 ### Set up ionrev profile:
@@ -55,7 +55,7 @@ Besides the `install` function, [index.js](src/index.js) may also exports mixins
 
 ```js
 <script>
-import { MyMixin, MyConstants, MyUtil } from '@iy4u/form-gen-client-lib'
+import { MyMixin, MyConstants, MyUtil } from '@sparkz-community/form-gen-client-lib'
 
 export default {
   mixins: [MyMixin],
@@ -80,7 +80,7 @@ If your component library contains a set of styles used by all components, you m
 To use the global style in client app, including the components defined by the client app, import it in your `main.js`:
 
 ```js
-import '@iy4u/form-gen-client-lib/assets/main.css'
+import '@sparkz-community/form-gen-client-lib/assets/main.css'
 ```
 
 If you want to avoid conflicting with other global styles, consider pre-fix your classes in your style, or wrap them into a namespace class.
@@ -104,7 +104,7 @@ module.exports = {
 }
 ```
 
-In your client app, you don't need to explicitly add dependency to `moment` in `package.json` as it is a dependency of `@iy4u/form-gen-client-lib`. However, if you want to reduce the size of the bundle size of client app, add the following in the `vue.config.js` of client app ([details](https://github.com/jmblog/how-to-optimize-momentjs-with-webpack)), assuming it is also built with Vue CLI .
+In your client app, you don't need to explicitly add dependency to `moment` in `package.json` as it is a dependency of `@sparkz-community/form-gen-client-lib`. However, if you want to reduce the size of the bundle size of client app, add the following in the `vue.config.js` of client app ([details](https://github.com/jmblog/how-to-optimize-momentjs-with-webpack)), assuming it is also built with Vue CLI .
 
 ```js
 const webpack = require('webpack')
