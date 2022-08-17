@@ -23,7 +23,6 @@
   import NumberInput from '../../atoms/NumberInput/NumberInput.vue';
   import SelectInput from '../../atoms/SelectInput/SelectInput.vue';
   import ImageSelect from '../../atoms/ImageSelect/ImageSelect.vue';
-  import CtkDatePicker from '../../atoms/CtkDatePicker/CtkDatePicker.vue';
   import DatePicker from '../../atoms/DatePicker/DatePicker.vue';
   import ColorPicker from '../../atoms/ColorPicker/ColorPicker.vue';
   import ColorSelectorRoundInput from '../../atoms/ColorSelectorRoundInput/ColorSelectorRoundInput.vue';
@@ -39,7 +38,6 @@
       NumberInput,
       SelectInput,
       ImageSelect,
-      CtkDatePicker,
       DatePicker,
       ColorPicker,
       ColorSelectorRoundInput,
