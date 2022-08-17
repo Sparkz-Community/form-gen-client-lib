@@ -38,6 +38,7 @@
     "filepond-plugin-image-transform": "^3.7.1",
     "omit-deep": "^0.3.0",
     "tinycolor2": "^1.4.1",
+    "vue-ctk-date-time-picker": "^2.5.0",
     "vue-filepond": "^7.0.3",
     "vue-json-pretty": "^1.6.3",
     "vue-tel-input": "^6.0.3",

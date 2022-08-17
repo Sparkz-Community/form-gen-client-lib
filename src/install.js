@@ -1,6 +1,7 @@
 import * as components from './components';
 import {
   DatePicker,
+  VueCtkDateTimePicker,
   VueNumberInput,
   VueTelInput,
 } from './packages';
@@ -20,6 +21,7 @@ const install = (Vue, {prefix} = {}) => {
 
   Vue.config.globalProperties.$omitDeep = require('omit-deep');
 
+  Vue.component('VueCtkDateTimePicker', VueCtkDateTimePicker);
   Vue.component('DatePicker', DatePicker);
   Vue.component('vue-number-input', VueNumberInput);
   Vue.use(VueTelInput);
