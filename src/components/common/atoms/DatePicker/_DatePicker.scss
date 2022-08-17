@@ -1,0 +1,21 @@
+#DatePicker {
+  .field-input {
+    background-color: unset;
+    border: unset;
+    border-radius: unset;
+    padding-left: unset;
+
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.00937em;
+  }
+  .field.is-focused .field-input {
+    border: unset !important;
+  }
+}
+
+.time-picker-column {
+  height: 350px;
+}
