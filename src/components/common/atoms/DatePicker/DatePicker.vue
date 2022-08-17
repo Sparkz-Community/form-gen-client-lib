@@ -44,16 +44,15 @@
       attrs() {
         let newVal = {...this.$attrs};
         // attrs defaults
-        this.$lset(newVal, 'attrs.custom-shortcuts', this.$lget(newVal, 'attrs.custom-shortcuts', [
-          {key: 'thisWeek', label: 'This week', value: 'isoWeek'},
-          {key: 'lastWeek', label: 'Last week', value: '-isoWeek'},
-          {key: 'last7Days', label: 'Last 7 days', value: 7},
-          {key: 'last30Days', label: 'Last 30 days', value: 30},
-          {key: 'thisMonth', label: 'This month', value: 'month'},
-          {key: 'lastMonth', label: 'Last month', value: '-month'},
-          {key: 'thisYear', label: 'This year', value: 'year'},
-          {key: 'lastYear', label: 'Last year', value: '-year'},
-        ]));
+        this.$lset(newVal, 'attrs.weekStart', this.$lget(newVal, 'attrs.weekStart', 0));
+        this.$lset(newVal, 'attrs.is24', this.$lget(newVal, 'attrs.is24', false));
+        this.$lset(newVal, 'attrs.position', this.$lget(newVal, 'attrs.position', 'left'));
+        this.$lset(newVal, 'attrs.showNowButton', this.$lget(newVal, 'attrs.showNowButton', true));
+        this.$lset(newVal, 'attrs.autoApply', this.$lget(newVal, 'attrs.autoApply', true));
+        this.$lset(newVal, 'attrs.closeOnAutoApply', this.$lget(newVal, 'attrs.closeOnAutoApply', false));
+        if (this.$lget(newVal, 'attrs.timePicker')) {
+          this.$lset(newVal, 'attrs.modeHeight', this.$lget(newVal, 'attrs.modeHeight', 120));
+        }
 
         // div-attrs defaults
         this.$lset(newVal, 'div-attrs.class', this.$lget(newVal, 'div-attrs.class', 'col-12 col-sm-6'));
