@@ -4,6 +4,7 @@ import ColorPick from './common/atoms/ColorSelectorRound/ColorPick';
 import ColorSelectorRound from './common/atoms/ColorSelectorRound/ColorSelectorRound';
 import SimpleColorSelector from './common/atoms/ColorSelectorRound/SimpleColorSelector';
 import ColorSelectorRoundInput from './common/atoms/ColorSelectorRoundInput/ColorSelectorRoundInput';
+import CtkDatePicker from './common/atoms/CtkDatePicker/CtkDatePicker';
 import DatePicker from './common/atoms/DatePicker/DatePicker';
 import EditorInput from './common/atoms/EditorInput/EditorInput';
 import ImageSelect from './common/atoms/ImageSelect/ImageSelect';
@@ -33,6 +34,7 @@ export {
   ColorSelectorRound,
   SimpleColorSelector,
   ColorSelectorRoundInput,
+  CtkDatePicker,
   DatePicker,
   EditorInput,
   ImageSelect,
