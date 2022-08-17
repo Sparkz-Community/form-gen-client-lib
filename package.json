@@ -1,8 +1,8 @@
 {
   "name": "@sparkz-community/form-gen-client-lib",
   "version": "0.1.2",
-  "description": "IY Foundation Client Library",
-  "author": "IY Foundation Development <dev@sparkz.community>",
+  "description": "Sparkz Community Form Generator Client Library",
+  "author": "Sparkz Community Development <dev@sparkz.community>",
   "license": "MIT",
   "main": "src/index.js",
   "files": [
@@ -24,6 +24,7 @@
     "@chenfengyuan/vue-number-input": "^2.0.1",
     "@radial-color-picker/color-wheel": "^2.2.0",
     "@radial-color-picker/rotator": "^2.1.0",
+    "@vuepic/vue-datepicker": "^3.4.5",
     "awesome-phonenumber": "^3.2.0",
     "color": "^4.2.3",
     "color-string": "^1.9.1",
