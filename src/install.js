@@ -11,11 +11,6 @@ import 'vue-tel-input/dist/vue-tel-input.css';
 const $omitDeep = require('omit-deep');
 
 const install = (app, {prefix, loadComponents = true} = {}) => {
-  for (let key in components) {
-    let _key = prefix ? prefix + key : key;
-    app.component(_key, components[key]);
-  }
-
   if (loadComponents) {
     for (let key in components) {
       let _key = prefix ? prefix + key : key;
