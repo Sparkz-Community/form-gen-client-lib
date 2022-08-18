@@ -1,5 +1,6 @@
 import * as components from './components';
 import {
+  DatePicker,
   VueCtkDateTimePicker,
   VueNumberInput,
   VueTelInput,
@@ -7,10 +8,14 @@ import {
 
 import 'vue-tel-input/dist/vue-tel-input.css';
 
-const install = (Vue, {prefix} = {}) => {
-  for (let key in components) {
-    let _key = prefix ? prefix + key : key;
-    Vue.component(_key, components[key]);
+const $omitDeep = require('omit-deep');
+
+const install = (app, {prefix, loadComponents = true} = {}) => {
+  if (loadComponents) {
+    for (let key in components) {
+      let _key = prefix ? prefix + key : key;
+      app.component(_key, components[key]);
+    }
   }
 
   Array.prototype.insert = function (index, ...value) {
@@ -18,11 +23,13 @@ const install = (Vue, {prefix} = {}) => {
     return this;
   };
 
-  Vue.config.globalProperties.$omitDeep = require('omit-deep');
+  app.config.globalProperties.$omitDeep = $omitDeep;
+  app.provide('$omitDeep', $omitDeep);
 
-  Vue.component('VueCtkDateTimePicker', VueCtkDateTimePicker);
-  Vue.component('vue-number-input', VueNumberInput);
-  Vue.use(VueTelInput);
+  app.component('VueCtkDateTimePicker', VueCtkDateTimePicker);
+  app.component('DatePicker', DatePicker);
+  app.component('vue-number-input', VueNumberInput);
+  app.use(VueTelInput);
 };
 
 // auto install
