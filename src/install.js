@@ -1,6 +1,6 @@
 import * as components from './components';
 import {
-  DatePicker,
+  VueDatePicker,
   VueCtkDateTimePicker,
   VueNumberInput,
   VueTelInput,
@@ -27,7 +27,7 @@ const install = (app, {prefix, loadComponents = true} = {}) => {
   app.provide('$omitDeep', $omitDeep);
 
   app.component('VueCtkDateTimePicker', VueCtkDateTimePicker);
-  app.component('DatePicker', DatePicker);
+  app.component('VueDatePicker', VueDatePicker);
   app.component('vue-number-input', VueNumberInput);
   app.use(VueTelInput);
 };

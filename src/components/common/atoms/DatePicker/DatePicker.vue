@@ -5,14 +5,14 @@
                v-bind="attrs['q-field-attrs']"
                @clear="$emit('update:modelValue', undefined)">
         <template v-slot:control>
-          <DatePicker ref="DatePicker"
+          <VueDatePicker ref="DatePicker"
                       :modelValue="modelValue"
                       @update:modelValue="$emit('update:modelValue', $event)"
                       v-bind="attrs['attrs']">
             <template v-for="slot in slots" v-slot:[slot]="slotProps">
               <slot :name="slot" :key_name="path" v-bind="slotProps"></slot>
             </template>
-          </DatePicker>
+          </VueDatePicker>
         </template>
       </q-field>
     </div>
