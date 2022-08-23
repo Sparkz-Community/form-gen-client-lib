@@ -2,7 +2,7 @@
   <transition v-bind="attrs['transition-attrs']">
     <div id="NumberInput" v-bind="attrs['div-attrs']">
       <span v-if="label"><b>{{ label }}:</b></span>
-      <vue-number-input :name="path" :modelValue="modelValue" @change="$emit('update:modelValue', $event)" v-bind="attrs['attrs']">
+      <vue-number-input :name="path" :modelValue="modelValue" @update:modelValue="$emit('update:modelValue', $event)" v-bind="attrs['attrs']">
         <template v-for="slot in slots" v-slot:[slot]="slotProps">
           <slot :name="slot" :key_name="path" v-bind="slotProps"></slot>
         </template>
